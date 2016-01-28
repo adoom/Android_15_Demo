@@ -8,4 +8,5 @@ public class Application extends com.activeandroid.app.Application {
     //test
     //
     //test2
+    //test3
 }
