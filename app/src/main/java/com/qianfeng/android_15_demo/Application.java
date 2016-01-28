@@ -6,4 +6,5 @@ package com.qianfeng.android_15_demo;
 public class Application extends com.activeandroid.app.Application {
 
     //test
+    //
 }
