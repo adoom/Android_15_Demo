@@ -1,45 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.qianfeng.android_15_demo"
-          xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qianfeng.android_15_demo" >
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:name=".Application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" >
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <!-- 数据库名称与版本号-->
-        <meta-data android:name="AA_DB_NAME" android:value="demo.db"/>
-        <meta-data android:name="AA_DB_VERSION" android:value="1"/>
-        <!-- 友盟app key-->
-        <meta-data android:name="UMENG_APPKEY" android:value="56a6d23ce0f55a192a0019cc"/>
-        <!-- 友盟渠道号-->
-        <!--<meta-data-->
-        <!--android:name="UMENG_CHANNEL"-->
-        <!--android:value="360"/>-->
+        <!-- 数据库名称与版本号 -->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="demo.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+        <!-- 友盟app key -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56a6d23ce0f55a192a0019cc" />
+        <!-- 友盟渠道号 -->
+        <!-- <meta-data -->
+        <!-- android:name="UMENG_CHANNEL" -->
+        <!-- android:value="360"/> -->
 
         <meta-data
             android:name="UMENG_CHANNEL"
             android:value="${UMENG_CHANNEL_VALUE}" />
 
+        <activity
+            android:name=".activity.MainActivity2Activity"
+            android:label="@string/title_activity_main_activity2" >
+        </activity>
     </application>
-
 
 </manifest>
