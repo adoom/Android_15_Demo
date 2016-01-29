@@ -41,6 +41,7 @@ public class MainActivity extends BaseActivity {
     initRecyclerView();
     loadData();
     LogU.e("youmeng", getDeviceInfo(this));
+    //test
   }
 
 
